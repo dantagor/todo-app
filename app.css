@@ -1,3 +1,6 @@
+body{
+    background-color: #e5e5e5!important;
+}
 #main-header{
     background-color: #001524;
     height: 300px;
@@ -36,4 +39,110 @@
 #main-header button:hover{
     opacity: 0.9;
     cursor: pointer;
+}
+#main-content{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0!important;
+}
+.stats li{
+    background-color:#02253e;
+    color: #e5e5e5;
+    padding: 5px 0px 5px 7px;
+    margin: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+}
+#remaining-tasks{
+    background-color: #457B9D;
+    color: #fafafa;
+    padding: 7px 10px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+#completed-tasks{
+    background-color: #457B9D;
+    color: #fafafa;
+    padding: 7px 10px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+#total-tasks{
+    background-color: #457B9D;
+    color: #fafafa;
+    padding: 7px 10px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.todos{
+    min-height: 300px;
+    margin-bottom: 4rem;
+}
+.todos li {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todos li div{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-size: 1.3rem;
+}
+.todos li.complete{
+    background-color: #8d99ae;
+    text-decoration: line-through;
+    color: #6e788a;
+}
+.todos li button{
+    border: none;
+    background: none;
+}
+.todos li button img{
+    width: 1rem;
+    height: 1rem;
+}
+input[type='checkbox']{
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid black;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    transition: all .2s ease-in-out;
+}
+input[type='checkbox']::before{
+    content: url(./assets/check-mark-icon.svg);
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+}
+input[type='checkbox']:checked{
+    background-color: white;
+    border-color: white;
+}
+input[type='checkbox']:checked::before{
+    transform: scale(1);
+}
+
+footer{
+    color: #8d99ae;
+}
+footer a{
+    color: #457B9D;
 }

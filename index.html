@@ -31,7 +31,48 @@
         </div>
     </header>
 
-    
+    <section>
+        <div id="main-content">
+            <ul class="stats mt-3">
+                <li>
+                    <span>Remaining</span>
+                    <span id="remaining-tasks">0</span>
+                </li>
+                <li>
+                    <span>Completed</span>
+                    <span id="completed-tasks">0</span>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <span id="total-tasks">0</span>
+                </li>
+            </ul>
+            <ul class="todos">
+                <li>
+                    <div>
+                        <input type="checkbox" name="tasks" id="1">
+                        <span>Water my cactus</span>
+                    </div>
+                    <button title="Remove task" class="remove-task"><img src="assets/X.svg" alt="*"></button>
+                </li>
+
+                <li class="complete">
+                    <div>
+                        <input type="checkbox" name="tasks" id="2">
+                        <span>Water my cactus</span>
+                    </div>
+                    <button title="Remove task" class="remove-task"><img src="assets/X.svg" alt="*"></button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>Designed and Coded by <a href="">Adam Nemeth</a>.</p>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
