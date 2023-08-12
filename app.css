@@ -1,4 +1,39 @@
-body{
+#main-header{
+    background-color: #001524;
+    height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#main-header .container{
+    padding-right: 0;
+    padding-left: 0;
+}
+#main-header h1{
     font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 18px;
+    color: #fafafa;
+}
+#main-header form{
+    width: 100%;
+    padding: 10px;
+}
+#main-header input{
+    margin-right: 5px;
+    background-color: #02253e;
+    border: none;
+    color: #fafafa;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+#main-header button{
+    padding: 15px 20px;
+    background-color: #FF7D00;
+    color: #fafafa;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+#main-header button:hover{
+    opacity: 0.9;
+    cursor: pointer;
 }
