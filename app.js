@@ -8,6 +8,12 @@ const mainInput = document.querySelector('#todo-form input');
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
+if(localStorage.getItem('tasks')){
+    tasks.map((task) => {
+        createTask(task);
+    });
+}
+
 todoForm.addEventListener('submit', (e)=>{
     e.preventDefault();
 
@@ -53,3 +59,4 @@ function createTask(task){
 
     todoList.appendChild(taskEl);
 }
+
