@@ -67,5 +67,6 @@ function countTasks(){
         task.isCompleted == true;
     })
     totalTasks.textContent = tasks.length;
-
+    completedTasks.textContent = completedTasksArray.length;
+    remainingTasks.textContent = tasks.length - completedTasksArray.length;
 }
